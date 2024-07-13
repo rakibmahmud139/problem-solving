@@ -77,3 +77,21 @@ const getCarsSortByYear = (items) => {
 
 const sortedCar = getCarsSortByYear(cars);
 console.log(sortedCar);
+
+//5.Task: Array Reduction
+
+const numbers = [
+  1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+];
+
+const getSumOfAllNumber = (items) => {
+  const sum = items.reduce(
+    (acc, item) => (item % 2 === 0 ? acc + item : acc),
+    0
+  );
+
+  return sum;
+};
+
+const sumOfAllNumber = getSumOfAllNumber(numbers);
+console.log(sumOfAllNumber);
